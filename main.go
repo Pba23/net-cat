@@ -26,7 +26,8 @@ func main() {
 	}
 
 	if len(os.Args) > 2 {
-		log.Fatal("[USAGE]: ./TCPChatClient $serverIP:$serverPort")
+		fmt.Println("[USAGE]: ./TCPChat $port")
+		return
 	}
 
 	ln, err := net.Listen("tcp", ":"+port)

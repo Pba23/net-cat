@@ -53,7 +53,6 @@ restart:
 		username: username,
 	}
 
-	fmt.Println(tabchat)
 	for _, chat := range tabchat {
 		conn.Write([]byte(chat + "\n"))
 	}
